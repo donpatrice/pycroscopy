@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Examples &amp; Tutorials &mdash; pycroscopy 0.60.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Formalizing Data Processing" href="cookbooks/plot_process.html" />
+    <link rel="prev" title="Package Organization" href="../package_organization.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pycroscopy
+          
+
+          
+            
+            <img src="../_static/logo_v01.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.60.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">Pycroscopy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../external_guides.html">Tutorials on Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../package_organization.html">Package Organization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples &amp; Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#guides-to-pycroscopy">Guides to Pycroscopy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_process.html">Formalizing Data Processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_io_utils.html">Input / Output / Computing utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_plot_utils.html">Plotting utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_h5py.html">Primer to HDF5 and h5py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_parallel_compute.html">Speed up computations with parallel_compute()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_pycro_dataset.html">The PycroDataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_numpy_translator.html">Translation and the NumpyTranslator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_dtype_utils.html">Utilities for handling data types and transformations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_hdf_utils_read.html">Utilities for reading Pycroscopy HDF5 files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_hdf_utils_write.html">Utilities for writing Pycroscopy HDF5 files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookbooks/plot_write_utils.html">Utilities that assist in writing Pycroscopy data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#scientific-data-analysis">Scientific Data Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_analysis/plot_fft_2d_filtering.html">FFT &amp; Filtering of Atomically Resolved Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_analysis/plot_image_registration.html">Image alignment and registration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_analysis/plot_spectral_unmixing.html">Spectral Unmixing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data_format.html">Pycroscopy Data and File Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../translators.html">Data Translators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../papers_conferences.html">Papers / Conferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html#acknowledgements">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whats_new.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pycroscopy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Examples &amp; Tutorials</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/auto_examples/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="examples-tutorials">
+<h1>Examples &amp; Tutorials<a class="headerlink" href="#examples-tutorials" title="Permalink to this headline">¶</a></h1>
+<div style='clear:both'></div><div class="section" id="guides-to-pycroscopy">
+<h2>Guides to Pycroscopy<a class="headerlink" href="#guides-to-pycroscopy" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id1">
+<img alt="../_images/sphx_glr_plot_process_thumb.png" src="../_images/sphx_glr_plot_process_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_process.html#sphx-glr-auto-examples-cookbooks-plot-process-py"><span class="std std-ref">Formalizing Data Processing</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id2">
+<img alt="../_images/sphx_glr_plot_io_utils_thumb.png" src="../_images/sphx_glr_plot_io_utils_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_io_utils.html#sphx-glr-auto-examples-cookbooks-plot-io-utils-py"><span class="std std-ref">Input / Output / Computing utilities</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id3">
+<img alt="../_images/sphx_glr_plot_plot_utils_thumb.png" src="../_images/sphx_glr_plot_plot_utils_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_plot_utils.html#sphx-glr-auto-examples-cookbooks-plot-plot-utils-py"><span class="std std-ref">Plotting utilities</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id4">
+<img alt="../_images/sphx_glr_plot_h5py_thumb.png" src="../_images/sphx_glr_plot_h5py_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_h5py.html#sphx-glr-auto-examples-cookbooks-plot-h5py-py"><span class="std std-ref">Primer to HDF5 and h5py</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath, Chris R. Smith**"><div class="figure" id="id5">
+<img alt="../_images/sphx_glr_plot_parallel_compute_thumb.png" src="../_images/sphx_glr_plot_parallel_compute_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_parallel_compute.html#sphx-glr-auto-examples-cookbooks-plot-parallel-compute-py"><span class="std std-ref">Speed up computations with parallel_compute()</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id6">
+<img alt="../_images/sphx_glr_plot_pycro_dataset_thumb.png" src="../_images/sphx_glr_plot_pycro_dataset_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_pycro_dataset.html#sphx-glr-auto-examples-cookbooks-plot-pycro-dataset-py"><span class="std std-ref">The PycroDataset</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id7">
+<img alt="../_images/sphx_glr_plot_numpy_translator_thumb.png" src="../_images/sphx_glr_plot_numpy_translator_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_numpy_translator.html#sphx-glr-auto-examples-cookbooks-plot-numpy-translator-py"><span class="std std-ref">Translation and the NumpyTranslator</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id8">
+<img alt="../_images/sphx_glr_plot_dtype_utils_thumb.png" src="../_images/sphx_glr_plot_dtype_utils_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_dtype_utils.html#sphx-glr-auto-examples-cookbooks-plot-dtype-utils-py"><span class="std std-ref">Utilities for handling data types and transformations</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id9">
+<img alt="../_images/sphx_glr_plot_hdf_utils_read_thumb.png" src="../_images/sphx_glr_plot_hdf_utils_read_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_hdf_utils_read.html#sphx-glr-auto-examples-cookbooks-plot-hdf-utils-read-py"><span class="std std-ref">Utilities for reading Pycroscopy HDF5 files</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id10">
+<img alt="../_images/sphx_glr_plot_hdf_utils_write_thumb.png" src="../_images/sphx_glr_plot_hdf_utils_write_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_hdf_utils_write.html#sphx-glr-auto-examples-cookbooks-plot-hdf-utils-write-py"><span class="std std-ref">Utilities for writing Pycroscopy HDF5 files</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**"><div class="figure" id="id11">
+<img alt="../_images/sphx_glr_plot_write_utils_thumb.png" src="../_images/sphx_glr_plot_write_utils_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="cookbooks/plot_write_utils.html#sphx-glr-auto-examples-cookbooks-plot-write-utils-py"><span class="std std-ref">Utilities that assist in writing Pycroscopy data</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div style='clear:both'></div></div>
+<div class="section" id="scientific-data-analysis">
+<h2>Scientific Data Analysis<a class="headerlink" href="#scientific-data-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="**Stephen Jesse and Suhas Somnath**"><div class="figure" id="id12">
+<img alt="../_images/sphx_glr_plot_fft_2d_filtering_thumb.png" src="../_images/sphx_glr_plot_fft_2d_filtering_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="data_analysis/plot_fft_2d_filtering.html#sphx-glr-auto-examples-data-analysis-plot-fft-2d-filtering-py"><span class="std std-ref">FFT &amp; Filtering of Atomically Resolved Images</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="**Stephen Jesse, Alex Belianinov, Suhas Somnath**"><div class="figure" id="id13">
+<img alt="../_images/sphx_glr_plot_image_registration_thumb.png" src="../_images/sphx_glr_plot_image_registration_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="data_analysis/plot_image_registration.html#sphx-glr-auto-examples-data-analysis-plot-image-registration-py"><span class="std std-ref">Image alignment and registration</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Suhas Somnath, Rama K. Vasudevan, Stephen Jesse"><div class="figure" id="id14">
+<img alt="../_images/sphx_glr_plot_spectral_unmixing_thumb.png" src="../_images/sphx_glr_plot_spectral_unmixing_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="data_analysis/plot_spectral_unmixing.html#sphx-glr-auto-examples-data-analysis-plot-spectral-unmixing-py"><span class="std std-ref">Spectral Unmixing</span></a></span></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div style='clear:both'></div><div class="sphx-glr-footer docutils container">
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../_downloads/auto_examples_python.zip" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">auto_examples_python.zip</span></code></a></div>
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../_downloads/auto_examples_jupyter.zip" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Jupyter</span> <span class="pre">notebooks:</span> <span class="pre">auto_examples_jupyter.zip</span></code></a></div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cookbooks/plot_process.html" class="btn btn-neutral float-right" title="Formalizing Data Processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../package_organization.html" class="btn btn-neutral" title="Package Organization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Suhas Somnath, Chris Smith, Stephen Jesse, Numan Laanait.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.60.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

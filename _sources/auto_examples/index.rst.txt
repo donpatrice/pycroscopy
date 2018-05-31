@@ -1,0 +1,328 @@
+:orphan:
+
+====================
+Examples & Tutorials
+====================
+
+
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+Guides to Pycroscopy
+--------------------
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_process_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_process.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_process
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_io_utils_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_io_utils.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_io_utils
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_plot_utils_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_plot_utils.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_plot_utils
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_h5py_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_h5py.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_h5py
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath, Chris R. Smith**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_parallel_compute_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_parallel_compute.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_parallel_compute
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_pycro_dataset_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_pycro_dataset.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_pycro_dataset
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_numpy_translator_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_numpy_translator.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_numpy_translator
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_dtype_utils_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_dtype_utils.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_dtype_utils
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_hdf_utils_read_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_hdf_utils_read.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_hdf_utils_read
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_hdf_utils_write_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_hdf_utils_write.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_hdf_utils_write
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/cookbooks/images/thumb/sphx_glr_plot_write_utils_thumb.png
+
+        :ref:`sphx_glr_auto_examples_cookbooks_plot_write_utils.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/cookbooks/plot_write_utils
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+Scientific Data Analysis
+------------------------
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Stephen Jesse and Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/data_analysis/images/thumb/sphx_glr_plot_fft_2d_filtering_thumb.png
+
+        :ref:`sphx_glr_auto_examples_data_analysis_plot_fft_2d_filtering.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/data_analysis/plot_fft_2d_filtering
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="**Stephen Jesse, Alex Belianinov, Suhas Somnath**">
+
+.. only:: html
+
+    .. figure:: /auto_examples/data_analysis/images/thumb/sphx_glr_plot_image_registration_thumb.png
+
+        :ref:`sphx_glr_auto_examples_data_analysis_plot_image_registration.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/data_analysis/plot_image_registration
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Suhas Somnath, Rama K. Vasudevan, Stephen Jesse">
+
+.. only:: html
+
+    .. figure:: /auto_examples/data_analysis/images/thumb/sphx_glr_plot_spectral_unmixing_thumb.png
+
+        :ref:`sphx_glr_auto_examples_data_analysis_plot_spectral_unmixing.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/data_analysis/plot_spectral_unmixing
+.. raw:: html
+
+    <div style='clear:both'></div>
+
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+
+
+  .. container:: sphx-glr-download
+
+    :download:`Download all examples in Python source code: auto_examples_python.zip <//home/travis/build/pycroscopy/pycroscopy/docs/auto_examples/auto_examples_python.zip>`
+
+
+
+  .. container:: sphx-glr-download
+
+    :download:`Download all examples in Jupyter notebooks: auto_examples_jupyter.zip <//home/travis/build/pycroscopy/pycroscopy/docs/auto_examples/auto_examples_jupyter.zip>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_
